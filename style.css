@@ -1,7 +1,10 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif:ital,wght@0,400;1,700&display=swap');
+
 
 .lover-boy{
-    width: 30%;
+    width: 20%;
+
 }
 
 body{
@@ -10,6 +13,36 @@ body{
     background-size: cover;
 
 }
+
+.first{
+    width: 20%;
+}
+
+button {
+    font-family: 'PT serif', serif;
+    
+
+}
+
+.custom-margin{
+   margin-right: 50px; 
+}
+
+h1{
+    font-family: 'PT serif', serif;
+    font-weight: 900;
+    color: red;
+    font-size: 4em;
+}
+
+.button-container{
+    width: 20%;
+}
+
+img {
+    border-color: pink;
+}
+
 
 
 
