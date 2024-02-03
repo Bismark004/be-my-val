@@ -45,5 +45,15 @@ img {
 
 
 
+#no {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#no.move {
+    transform: translateX(50px); /* Move the button 50 pixels to the right */
+}
+
+
+
 
 
