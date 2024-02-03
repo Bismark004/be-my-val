@@ -1,19 +1,16 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+
+
+.lover-boy{
+    width: 30%;
 }
 
-body {
+body{
     background-image: url('1dreiv6f.png');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
-
-.flower-card{
-    height: 50vh;
-}
 
 
