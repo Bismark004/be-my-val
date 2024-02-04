@@ -1,21 +1,12 @@
 const noButton = document.getElementById('nO');
 
-document.addEventListener('mousemove', function(event) {
-  const mouseX = event.clientX;
-  const mouseY = event.clientY;
-
-  const buttonRect = noButton.getBoundingClientRect();
-  const buttonX = buttonRect.left + buttonRect.width / 2;
-  const buttonY = buttonRect.top + buttonRect.height / 2;
-
-  const distance = Math.sqrt((mouseX - buttonX) ** 2 + (mouseY - buttonY) ** 2);
-
-  if (distance < 50) { // Adjust this threshold as needed
-    moveButtonRandomly();
-  }
+noButton.addEventListener('mouseenter', function() {
+  moveButtonRandomly();
 });
 
-noButton.addEventListener('click', moveButtonRandomly);
+noButton.addEventListener('click', function() {
+  moveButtonRandomly();
+});
 
 function moveButtonRandomly() {
   let x = Math.random() * (window.innerWidth - noButton.clientWidth);
