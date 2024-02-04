@@ -1,17 +1,25 @@
-const noButton = document.getElementById('nO');
+const button = document.getElementById('no');
 
-noButton.addEventListener('mouseenter', function() {
-  moveButtonRandomly();
-});
+const threshold = 100;
 
-noButton.addEventListener('click', function() {
-  moveButtonRandomly();
-});
+window.addEventListener('mousemove', function(e){
+    let x = e.clientX;
+    let y = e.clientY;
 
-function moveButtonRandomly() {
-  let x = Math.random() * (window.innerWidth - noButton.clientWidth);
-  let y = Math.random() * (window.innerHeight - noButton.clientHeight);
+    let rect = button.getBoundingClientRect();
+    let bx = rect.left + rect.width / 2;
+    let by = rect.top + rect.height / 2;
 
-  noButton.style.left = x + "px";
-  noButton.style.top = y + "px";
-}
+    let dx = x - bx;
+    let dy = y - by;
+    let distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance < threshold ) {
+        let rx = Math.random() * window.innerWidth;
+        let ry = Math.random() * window.innerHeight;
+
+        button.style.left = x + "px";
+        button.style.top = y + "px";
+
+    }
+})
