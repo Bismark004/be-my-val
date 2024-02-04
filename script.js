@@ -13,10 +13,11 @@ window.addEventListener('mousemove', function(e){
     let dy = y - by;
     let distance = Math.sqrt(dx * dx + dy * dy);
 
-    if (distance < threshold ) {
+    if (distance < threshold) {
         let rx = Math.random() * (window.innerWidth - rect.width);
         let ry = Math.random() * (window.innerHeight - rect.height);
 
+        button.style.position = 'absolute';
         button.style.left = rx + "px";
         button.style.top = ry + "px";
     }
