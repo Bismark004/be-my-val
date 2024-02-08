@@ -7,6 +7,10 @@
 
 }
 
+.my-val {
+    font-size: 8rem;
+}
+
 body{
     background-image: url('1dreiv6f.png');
     background-repeat: no-repeat;
@@ -44,16 +48,13 @@ img {
 }
 
 
-
 #no {
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    
+    position: absolute;
+    white-space: nowrap;
+
+
 }
-
-#no.move {
-    transform: translateX(50px); /* Move the button 50 pixels to the right */
-}
-
-
 
 
 
