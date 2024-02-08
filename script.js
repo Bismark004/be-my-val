@@ -30,4 +30,16 @@ function setButtonPosition(left, right) {
     if(distanceFromCenter(left, windowBox.left, buttonBox.width) < 0) {
         left = windowBox.right - buttonBox.width - OFFSET;
     };
+
+    if(distanceFromCenter(left, windowBox.right, buttonBox.width) > 0) {
+        left = windowBox.left - OFFSET;
+    };
+
+    if(distanceFromCenter(top, windowBox.top, buttonBox.height0) > 0) {
+        top = windowBox.top + OFFSET;
+    }
+
+    noButton.style.left = `${left}px`;
+    noButton.style.top = `${top}px`;
 }
+
