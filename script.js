@@ -23,3 +23,11 @@ document.addEventListener('mousemove', function(e) {
 
 });
 
+function setButtonPosition(left, right) {
+    const windowBox = document.body.getBoundingClientRect();
+    const buttonBox = noButton.getBoundingClientRect();
+
+    if(distanceFromCenter(left, windowBox.left, buttonBox.width) < 0) {
+        left = windowBox.right - buttonBox.width - OFFSET;
+    };
+}
