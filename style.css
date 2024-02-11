@@ -1,6 +1,11 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif:ital,wght@0,400;1,700&display=swap');
 
+#yes > a {
+    color: white;
+    text-decoration: none;
+}
+
 
 .lover-boy{
     width: 20%;
